@@ -10,7 +10,7 @@ public class Driver {
             int value = (int)(Math.random()*10000) %
                         TrashType.values().length;
             t = TrashType.values()[value];
-            collection.add(t);
+            collection.enqueue(t);
         }
         /*
          * Create one new TrashTruck instance.  Note that all threads
